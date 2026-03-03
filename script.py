@@ -1,10 +1,10 @@
 import json
 import argparse
-file_path = 'example_orders.json'
+
 import os
 
 
-def read_file(file):
+def read_file():
     parser = argparse.ArgumentParser(description="Read a file and print its contents.")
     parser.add_argument("file", type=str, help="Name or path of the file to read")
     args = parser.parse_args()
@@ -68,5 +68,5 @@ def read_file(file):
         print(f"An error occurred: {e}")
 
 
-read_file(file_path)
+read_file()
 
