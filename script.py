@@ -9,7 +9,6 @@ def read_file():
     parser.add_argument("file", type=str, help="Name or path of the file to read")
     args = parser.parse_args()
 
-# Open and read the file manually using a context manager
     try:
         with open(args.file, 'r', encoding='utf-8') as file:
             data = json.load(file) 
